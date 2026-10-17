@@ -16,69 +16,161 @@ body {
 header {
     background-color: #f6f7f3;
     color: #0E2C5E;
-    flex-grow: 0.3;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 70px;
-
-
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
 }
+ main{
+     padding-top: 70px;
+ }
 
+ footer{
+    background-color: #0E2C5E;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
 
-main {
-    background-color: #f6f7f3;
-    flex-grow: 10;
+    
+    
+ }
+
+ footer img { 
+    align-self: center;
+ }
+
+ .contenedor2{
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+    
+    flex: 5;
+    
+
+ }
+ .nexo{
+    flex: 1;
+    
+ }
+
+ .contFooter{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    padding-top: 70px;
+    gap: 10px;
+    
+ }
 
-}
+ footer li{
+    color: whitesmoke ;
+    font-size: 10px;
+    padding: 10px;
+    padding-left: 0;
+    
+ }
+ footer h3{
+    color: whitesmoke;
+    padding: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    border-bottom: solid 1px;
+    padding-bottom: 0.5;
+ }
 
-
-footer {
-    background-color: #0E2C5E;
-    flex-grow: 3;
-    height: 200px;
-
-
-}
-
-
-ul {
+ footer ul{
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    font-weight: bold;
-    padding-left: 50px;
-
-}
+ }
 
 .contenedor {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    height: 100%;
     margin-right: auto;
     padding-left: 20px;
     gap: 50px;
+}
 
+nav {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    gap: 50px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+nav li {
+    display: flex;
+}
+
+nav li a {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #0E2C5E;
+}
+
+nav li a:hover {
+    color: #f0ad31;
+    cursor: pointer;
+    transition: 0.7s;
+    
 }
 
 .iconos {
     margin-right: 40px;
+    
 
+}
+.iconos:hover{
+    cursor: pointer;
+    
 }
 
 .carrucel {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f3f3ed;
-    padding: 5px;
-    height: 400px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
 }
 
+#flechaIzq{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+#flechaDer{
+    position: absolute;
+    right: 0;
+    top: 50%;    
+    z-index: 10;
+}
+.imagenes {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.imagenes img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .texto {
     display: flex;
@@ -97,6 +189,7 @@ ul {
 .texto p {
     color: #0E2C5E;
     font-weight: 200;
+
 }
 
 .texto button {
@@ -109,6 +202,13 @@ ul {
     align-self: center;
     font-weight: bold;
     align-self: flex-start;
+    cursor: pointer;
+}
+
+.texto button:hover{
+    cursor: pointer;
+    background-color: #df630b;
+    transition: 0.5s;
 }
 
 .texto2 {
@@ -177,7 +277,7 @@ span {
     flex-direction: column;
     align-items: center;
     width: 200px;
-    background-color: white;
+    background-color: rgb(249, 246, 246);
     border-radius: 10px;
     gap: 5px;
     padding: 20px;
@@ -207,6 +307,7 @@ span {
     border-radius: 10px;
     width: 150px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .ofertas {
@@ -216,6 +317,12 @@ span {
     background-repeat: no-repeat;
     border-radius: 10px;
     margin: 40px;
+}
+
+.ofertas button:hover{
+    cursor: pointer;
+    background-color: #df630b;
+    transition: 0.7s;
 }
 
 .categoria {

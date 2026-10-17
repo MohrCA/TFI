@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nexo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
+        <img class="logo" src="./Imagenes/Logo.png" alt="" width="220px">
         <div class="contenedor">
-            <img class="logo" src="./Imagenes/Logo.png" alt="" width="220px">
             <nav>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Productos</li>
-                    <li>Ofertas</li>
-                    <li>Contacto</li>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Productos">Productos</a></li>
+                    <li><a href="#Ofertas">Ofertas</a></li>
+                    <li><a href="">Contacto</a></li>
+
+
                 </ul>
             </nav>
         </div>
@@ -30,21 +32,21 @@
     </header>
 
     <main>
-        <section class="carrucel">
-            <div class="texto">
-                <h1>Tu mundo Tech,<br> <span>en un solo lugar</span></h1>
-                <p>Los mejores productos tecnológicos, las últimas <br> novedades y todo lo que necesitás para estar
-                    <br> siempre conectado.
-                </p>
-                <button>Ver productos ⟶</button>
-            </div>
-            <img src="./Imagenes/laptop_PNG101803.png" alt="" width="500px">
+        <section id="Inicio" class="carrucel">
+            <button id="flechaIzq">❮</button>
+            <button id="flechaDer">❯</button>
+            <div class="imagenes">
+                <img src="./Imagenes/Imagenes de carrucel/Portátil gaming en paisaje montañoso.png" alt="">
+                <img src="./Imagenes/Imagenes de carrucel/Sin título.jpg" alt="">
+                <img src="./Imagenes/Imagenes de carrucel/Sin título2.jpg" alt="">
+            </div>    
+            
         </section>
         <section class="categoria">
             <h2>Esto es una seccion de: Tipos de productos (aca van iconos en azul de todo tipo de productos)</h2>
 
         </section>
-        <section class="allProducts">
+        <section id="Productos" class="allProducts">
             <h2>Productos destacados</h2>
             <div class="container">
                 <div class="productos">
@@ -85,7 +87,7 @@
             </div>
 
         </section>
-        <section class="ofertas">
+        <section id="Ofertas" class="ofertas">
             <div class="texto2">
                 <h5>Ofertas que<br> <span>te conectan</span></h5>
                 <p>Aprovecha los mejore precios en productos seleccionados</p>
@@ -94,9 +96,50 @@
         </section>
     </main>
     <footer>
-        <h3>Esto es el footer
 
-        </h3>
+        <div class="nexo"><img src="./Imagenes/Logo NEXO con tecnología conectada.png" alt="" width="250px"></div>
+
+        <div class="contenedor2">
+            <div class="contFooter">
+                <h3>Sobre NEXO</h3>
+                <ul>
+
+                    <li>Quienes somos</li>
+                    <li>Trabaja con nosotros</li>
+                    <li>Contacto</li>
+
+                </ul>
+            </div>
+            <div class="contFooter">
+                <h3>Ayuda y soporte</h3>
+                <ul>
+                    <li>Preguntas frecuentes</li>
+                    <li>Envios y entregas</li>
+                    <li>Cambios y devoluciones</li>
+                    <li>Garantia</li>
+                </ul>
+            </div>
+            <div class="contFooter">
+                <h3>Productos</h3>
+                <ul>
+                    <li>Notebooks</li>
+                    <li>Celulares</li>
+                    <li>Auriculares</li>
+                    <li>Gaming</li>
+                    <li>Monitores</li>
+                </ul>
+            </div>
+            <div class="contFooter">
+                <h3>Informacion Legal</h3>
+                <ul>
+                    <li>Terminos y condiciones</li>
+                    <li>Politica de privacidad</li>
+                    <li>Politica de cookies</li>
+                </ul>
+            </div>
+        </div>
+
+
     </footer>
     <script src="script.js"></script>
 </body>
