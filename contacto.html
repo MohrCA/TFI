@@ -3,12 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu mundo tech - Contacto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div>
-            <img src="Imagenes/Logo.png" alt="logo" width="220px">
-        </div>
+        <div class="contenedor">
+            <img class="logo" src="Imagenes/Logo.png" alt="logo" width="220px">
+        
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -17,34 +18,35 @@
                 <li><a href="contacto.html"> Contacto</a></li>
             </ul>
         </nav>
-        <div>
+        </div>
+        <div class="iconos">
             <img src="Imagenes/Ícono minimalista de usuario azul marino.png" alt="Icono de usuario" width="32px">
             <img src="Imagenes/Carrito de compras minimalista azul marino.png" alt="Carrito de compra" width="32px">
             <img src="Imagenes/Ícono de lupa azul minimalista.png" alt="Buscar" width="32px">
         </div>
     </header>
-    <main>
-        <div>
-        <h2>Ponete en contacto con nostros</h2>
-        <p>Dejanos tu consulta y te respondemos a la brevedad.</p>
+    <main class="seccion-contacto">
+        <div class="contenedor-contacto">
+        <h2 class="contenedor-contacto">Ponete en contacto con nostros</h2>
+        <p class="contenedor-contacto">Dejanos tu consulta y te respondemos a la brevedad.</p>
         <form action="">
-            <div>
+            <div class="grupo-campo">
                 <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre">
             </div>
-            <div>
+            <div class="grupo-campo">
                 <label for="email">Correo Electronico</label>
                 <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com">
             </div>
-            <div>
+            <div class="grupo-campo">
                 <label for="telefono">Telefono</label>
                 <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 2665-323434" >
             </div>
-            <div>
+            <div class="grupo-campo">
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribinos tu consulta aquí."></textarea>
             </div>
-            <button type="submit">Enviar consulta</button>
+            <button type="submit" class="btn-enviar">Enviar consulta</button>
         </form>
         </div>
     </main>

@@ -329,3 +329,67 @@ span {
     margin: 40px;
 
 }
+.seccion-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+.contenedor-contacto {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+}
+.contenedor-contacto h2{
+    color: #0E2C5E;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contenedor-contacto p{
+    color: #555;
+    margin-bottom: 25px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.grupo-campo{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.grupo-campo label{
+    color: #0E2C5E;
+    font-weight: bold;
+    font-size: 14px;
+}
+.grupo-campo input, .grupo-campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+}
+.grupo-campo input:focus, .grupo-campo textarea:focus{
+    border-color: #0E2C5E;
+}
+.btn-enviar{
+color: whitesmoke;
+background-color: #f0ad31;
+border: none;
+padding: 12px;
+border-radius: 8px;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+margin-top: 10px;
+
+}
+.btn-enviar:hover{
+    background-color: #d99926;
+}
