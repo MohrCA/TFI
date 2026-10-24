@@ -247,6 +247,10 @@ nav li a:hover {
     margin-left: 60%;
 }
 
+.publi2 span{
+    color: #555;
+}
+
 
 .publicidad h1 {
     color: white;
@@ -272,12 +276,13 @@ nav li a:hover {
     font-weight: bold;
     align-self: flex-start;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .publicidad button:hover {
     cursor: pointer;
     background-color: #df630b;
-    transition: 0.5s;
+    
 }
 
 .texto2 {
@@ -313,6 +318,7 @@ nav li a:hover {
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
+    transition: 0.5s;
 
 }
 
@@ -381,11 +387,12 @@ span {
     width: 150px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .productos button:hover{
     background-color: #df630b;
-    transition: 0.5s;
+    
 }
 
 .ofertas {
@@ -422,6 +429,7 @@ span {
     background-color: rgb(244, 241, 241);
     border-radius: 10px;
    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+   transition: 0.5s;
 
 }
 
@@ -431,7 +439,7 @@ span {
 .catDiv:hover{
     box-shadow: 0 4px 12px #0568e9;
     cursor: pointer;
-    transition: 0.5s;
+    
 }
 
 .categoria img{
