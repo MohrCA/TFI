@@ -350,8 +350,12 @@ span {
     border-radius: 10px;
     gap: 5px;
     padding: 20px;
+     box-shadow: 0 4px 12px #b1b4b7;
 }
-
+.productos:hover{
+    box-shadow: 0 4px 12px #c5ccd5;
+    cursor: pointer;
+}
 .productos h4 {
     color: #0E2C5E;
 
@@ -379,6 +383,11 @@ span {
     cursor: pointer;
 }
 
+.productos button:hover{
+    background-color: #df630b;
+    transition: 0.5s;
+}
+
 .ofertas {
     background-image: url(./Imagenes/Banner\ tecnológico\ con\ laptop\ y\ smartphone.png);
     background-size: cover;
@@ -396,8 +405,39 @@ span {
 
 .categoria {
     margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    height: 100px;
+}
+
+.catDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    width: 90px;
+    height: 80px;
+    background-color: rgb(244, 241, 241);
+    border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 
 }
+
+.catDiv h6{
+    color: #0E2C5E;
+}
+.catDiv:hover{
+    box-shadow: 0 4px 12px #0568e9;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.categoria img{
+    width: 50px;
+}
+
 .seccion-contacto{
     display: flex;
     justify-content: center;
