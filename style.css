@@ -525,7 +525,7 @@ margin-top: 10px;
 .resumen-oculto {
     display: none;
 }
-.card-resumen-exito{
+.card-resumen-exito {
     margin-top: 25px;
     padding: 20px;
     border-radius: 8px;
@@ -537,7 +537,7 @@ margin-top: 10px;
     gap: 8px;
 
 }
-.car-resumen-exito h3{
+.car-resumen-exito h3 {
     color: #2b7a30;
     font-size: 18px;
     border-bottom: none;

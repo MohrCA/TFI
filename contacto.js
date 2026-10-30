@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             mostrarError(nombreInput,errorNombre,"El nombre completo es obligatorio.")
             esValido=false;
         }
-        else if(nombreVal.lenght <3) {
+        else if(nombreVal.length <3) {
             mostrarError(nombreInput,errorNombre,"El nombre debe tener al menos 3 caracteres.")
             esValido=false;
         }
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
             esValido=false;
         }
 
-        if(mensajeVal.lenght > 0 && mensajeVal.lenght < 5 ){
+        if(mensajeVal.length > 0 && mensajeVal.length < 5 ){
             mostrarError(mensajeInput,errorMensaje,"El mensaje es muy corto(Minimo 5 caracteres si quieres dejar uno.")
             esValido=false;  
         }
