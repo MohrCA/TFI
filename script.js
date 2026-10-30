@@ -19,7 +19,7 @@ function mover() {
     
 }
 
-setInterval(mover, 3000);
+let intervalo = setInterval(mover, 3000);
 
 function moverIzq() {
     if (indice == 0) {
@@ -36,7 +36,7 @@ function moverIzq() {
         indice--;
     }
 
-    
+    clearInterval(intervalo);
 }
 
 function moverDer() {
@@ -48,7 +48,7 @@ function moverDer() {
         indice++;
     }
 
-    
+    clearInterval(intervalo);
 }
 
 izq.addEventListener("click", moverIzq);

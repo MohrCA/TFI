@@ -10,11 +10,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(242, 239, 239);
 }
 
 
 header {
-    background-color: #f3f4f7;
+    background-color: rgb(242, 239, 239);
     color: #0E2C5E;
     display: flex;
     align-items: center;
@@ -29,7 +30,118 @@ header {
 
 main {
     padding-top: 70px;
+    margin-top: 20px;
 }
+
+main h2 {
+    color: #0E2C5E;
+    padding: 20px;
+}
+
+.descuentos {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E2C5E;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+
+
+}
+
+.descuentos h4 {
+    color: #d99926;
+}
+
+.descuentos h1,
+p {
+    color: white;
+}
+
+.descuentos button {
+    color: whitesmoke;
+    background-color: #f0ad31;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.destacados {
+    width: 300px;
+    height: 400px;
+    
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0 4px 12px #b1b4b7;
+    
+}
+
+
+.destacados img {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-top: 15%;
+    
+
+    
+    
+}
+
+.precioImg{
+    
+    align-self: center;
+    margin: 15px;
+    flex-grow: 1;
+    border-radius: 10px;
+       
+}
+
+.precio{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    justify-content: space-evenly;
+    padding-left: 5%;
+}
+
+.destacados h4 {
+    color: #0E2C5E;
+}
+
+.desc {
+    color: rgb(54, 204, 17);
+}
+
+.tachado {
+    color: grey;
+    text-decoration: line-through;
+
+}
+
+.precioDesc {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0E2C5E;
+
+}
+
+.oferDest {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
 
 footer {
     background-color: #0E2C5E;
@@ -146,7 +258,7 @@ nav li a:hover {
     position: relative;
 }
 
-.contPubli{
+.contPubli {
     flex: 0 0 100%;
     height: 100%;
 }
@@ -168,6 +280,7 @@ nav li a:hover {
     transition: 0.5s;
 
 }
+
 #flechaDer {
     position: absolute;
     right: 0;
@@ -243,11 +356,11 @@ nav li a:hover {
     margin-top: 8%;
 }
 
-.publi2{
+.publi2 {
     margin-left: 60%;
 }
 
-.publi2 span{
+.publi2 span {
     color: #555;
 }
 
@@ -282,7 +395,7 @@ nav li a:hover {
 .publicidad button:hover {
     cursor: pointer;
     background-color: #df630b;
-    
+
 }
 
 .texto2 {
@@ -350,18 +463,21 @@ span {
 .productos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 200px;
     background-color: rgb(249, 246, 246);
     border-radius: 10px;
     gap: 5px;
     padding: 20px;
-     box-shadow: 0 4px 12px #b1b4b7;
+    box-shadow: 0 4px 12px #b1b4b7;
 }
-.productos:hover{
+
+.productos:hover {
     box-shadow: 0 4px 12px #c5ccd5;
     cursor: pointer;
 }
+
 .productos h4 {
     color: #0E2C5E;
 
@@ -390,9 +506,9 @@ span {
     transition: 0.5s;
 }
 
-.productos button:hover{
+.productos button:hover {
     background-color: #df630b;
-    
+
 }
 
 .ofertas {
@@ -415,75 +531,85 @@ span {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
+
     height: 100px;
 }
 
-.catDiv{
+.catDiv {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;   
+    justify-content: center;
+    align-items: center;
     width: 90px;
     height: 80px;
     background-color: rgb(244, 241, 241);
     border-radius: 10px;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
-   transition: 0.5s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: 0.5s;
 
 }
 
-.catDiv h6{
+.catDiv h6 {
     color: #0E2C5E;
 }
-.catDiv:hover{
+
+.catDiv:hover {
     box-shadow: 0 4px 12px #0568e9;
     cursor: pointer;
-    
+    transform: translateY(-5px);
+
 }
 
-.categoria img{
+.categoria img {
     width: 50px;
 }
 
-.seccion-contacto{
+.seccion-contacto {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
 }
+
 .contenedor-contacto {
     background-color: #ffffff;
     width: 100%;
     padding: 30px;
     border-radius: 12px;
 }
-.contenedor-contacto h2{
+
+.contenedor-contacto h2 {
     color: #0E2C5E;
     text-align: center;
     margin-bottom: 10px;
 }
-.contenedor-contacto p{
+
+.contenedor-contacto p {
     color: #555;
     margin-bottom: 25px;
     text-align: center;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
-.grupo-campo{
+
+.grupo-campo {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
-.grupo-campo label{
+
+.grupo-campo label {
     color: #0E2C5E;
     font-weight: bold;
     font-size: 14px;
 }
-.grupo-campo input, .grupo-campo textarea {
+
+.grupo-campo input,
+.grupo-campo textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -492,21 +618,25 @@ form{
     font-family: inherit;
     outline: none;
 }
-.grupo-campo input:focus, .grupo-campo textarea:focus{
+
+.grupo-campo input:focus,
+.grupo-campo textarea:focus {
     border-color: #0E2C5E;
 }
-.btn-enviar{
-color: whitesmoke;
-background-color: #f0ad31;
-border: none;
-padding: 12px;
-border-radius: 8px;
-font-weight: bold;
-font-size: 16px;
-cursor: pointer;
-margin-top: 10px;
+
+.btn-enviar {
+    color: whitesmoke;
+    background-color: #f0ad31;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
 
 }
-.btn-enviar:hover{
+
+.btn-enviar:hover {
     background-color: #d99926;
 }
