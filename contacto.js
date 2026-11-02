@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
+
+        limpiarErrores();
+
         let esValido = true;
 
         const nombreVal = nombreInput.value.trim();
@@ -58,14 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if(esValido){
+            console.log("¡Validación exitosa! Creando elementos...");
             contenedorResumen.innerHTML = "";
             contenedorResumen.className = "card-resumen-exito";
+            contenedorResumen.style.display="flex";
 
             const tituloResumen = document.createElement("h3");
-            tituloResumen.textContent= "¡Consulta enviada con exito!"
+            tituloResumen.textContent = "¡Consulta enviada con exito!";
+            tituloResumen.style.color= "#1b5e20";
 
             const parrafoTexto = document.createElement("p");
-            parrafoTexto.textContent="Gracias por comunicarte con Nexo. Aquí tenés el resumen de tus datos"
+            parrafoTexto.textContent="Gracias por comunicarte con Nexo. Aquí tenés el resumen de tus datos";
+            parrafoTexto.style.color = "#1e4620";
 
             const listaDatos = document.createElement("ul");
             listaDatos.style.listStyle  = "none";
@@ -76,34 +83,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const itemNombre = document.createElement("li");
             itemNombre.textContent = `Nombre: ${nombreVal}`;
+            itemNombre.style.color="#1e4620";
 
             const itemEmail =document.createElement("li");
             itemEmail.textContent = `Correo: ${emailVal}`;
+            itemEmail.style.color="#1e4620";
 
             const itemTelefono = document.createElement("li");
             itemTelefono.textContent = `Teléfono: ${telefonoVal}`;
+            itemTelefono.style.color="#1e4620";
 
             const itemMensaje = document.createElement("li");
             itemMensaje.textContent = `Mensaje: ${mensajeVal !== "" ? mensajeVal : "(Sin mensaje adicional)"}`;
+            itemMensaje.style.color="#1e4620";
 
             listaDatos.appendChild(itemNombre);
             listaDatos.appendChild(itemEmail);
             listaDatos.appendChild(itemTelefono);
-            listaDatos.appendChild(itemTelefono);
+            listaDatos.appendChild(itemMensaje);
 
+            contenedorResumen.appendChild(tituloResumen);
+            contenedorResumen.appendChild(parrafoTexto);
+            contenedorResumen.appendChild(listaDatos);
+
+            console.log("Elementos agregados al DOM con éxito.");
             form.reset();
         }
        
 })
 function mostrarError(inputElement,errorElement,mensaje) {
-    inputElement.classList.add("Campo-invalido");
+    inputElement.classList.add("campo-invalido");
     errorElement.textContent = mensaje;
 }
 function limpiarErrores() {
     const inputs = [nombreInput,emailInput,telefonoInput,mensajeInput];
     const errores = [errorNombre,errorEmail,errorTelefono,errorMensaje];
 
-    inputs.forEach(inputs => inputs.classList.remove("campu-invalido"));
+    inputs.forEach(inputs => inputs.classList.remove("campo-invalido"));
     errores.forEach(errores => errores.textContent="");
 
     contenedorResumen.innerHTML="";

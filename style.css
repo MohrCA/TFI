@@ -661,15 +661,21 @@ form {
     border-radius: 8px;
     background-color: #eaf7ed;
     border: 1px solid #a3e2b2;
-    color: #1e4620;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    color: #1e4620 ;
+    display: flex ;
+    flex-direction: column ;
+    gap: 8px ;
+    width: 100% ;
 
 }
-.car-resumen-exito h3 {
-    color: #2b7a30;
-    font-size: 18px;
-    border-bottom: none;
-    padding-bottom: 0px;
+.card-resumen-exito h3 {
+    color: #1b5e20 ;
+    font-size: 18px ;
+    border-bottom: none ;
+    padding-bottom: 0px ;
+}
+.card-resumen-exito p, .card-resumen-exito li{
+    color: #1e4620 ;
+    font-size: 14px ;
+    margin: 0 ;
 }
