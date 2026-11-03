@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: Roboto, Arial, sans-serif;
-
 }
 
 body {
@@ -12,7 +11,6 @@ body {
     flex-direction: column;
     background-color: rgb(242, 239, 239);
 }
-
 
 header {
     background-color: rgb(242, 239, 239);
@@ -24,7 +22,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
     z-index: 1000;
 }
 
@@ -46,8 +43,6 @@ main h2 {
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
-
-
 }
 
 .descuentos h4 {
@@ -71,7 +66,6 @@ p {
 .destacados {
     width: 300px;
     height: 400px;
-    
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -79,9 +73,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     box-shadow: 0 4px 12px #b1b4b7;
-    
 }
-
 
 .destacados img {
     display: flex;
@@ -89,22 +81,16 @@ p {
     height: 180px;
     object-fit: contain;
     margin-top: 15%;
-    
-
-    
-    
 }
 
-.precioImg{
-    
+.precioImg {
     align-self: center;
     margin: 15px;
     flex-grow: 1;
     border-radius: 10px;
-       
 }
 
-.precio{
+.precio {
     display: flex;
     flex-direction: column;
     flex-grow: 3;
@@ -123,14 +109,12 @@ p {
 .tachado {
     color: grey;
     text-decoration: line-through;
-
 }
 
 .precioDesc {
     font-size: 1.3rem;
     font-weight: bold;
     color: #0E2C5E;
-
 }
 
 .oferDest {
@@ -142,15 +126,11 @@ p {
     flex-wrap: wrap;
 }
 
-
 footer {
     background-color: #0E2C5E;
     display: flex;
-    height: 300px;
     justify-content: space-around;
-
-
-
+    align-items: center;
 }
 
 footer img {
@@ -162,6 +142,7 @@ footer img {
     justify-content: space-around;
     align-items: self-start;
     flex: 5;
+    padding: 10px;
 }
 
 .nexo {
@@ -180,7 +161,6 @@ footer li {
     font-size: 10px;
     padding: 10px;
     padding-left: 0;
-
 }
 
 footer h3 {
@@ -203,6 +183,7 @@ footer ul {
     margin-right: auto;
     padding-left: 20px;
     gap: 50px;
+    flex: 1;
 }
 
 nav {
@@ -237,18 +218,18 @@ nav li a:hover {
     color: #f0ad31;
     cursor: pointer;
     transition: 0.7s;
+}
 
+nav ul li a.activo {
+    color: #f0ad31;
 }
 
 .iconos {
     margin-right: 40px;
-
-
 }
 
 .iconos:hover {
     cursor: pointer;
-
 }
 
 .carrucel {
@@ -263,12 +244,10 @@ nav li a:hover {
     height: 100%;
 }
 
-
 #flechaIzq {
     position: absolute;
     top: 50%;
     z-index: 10;
-    font-size: 20px;
     border: none;
     background: transparent;
     color: white;
@@ -278,7 +257,6 @@ nav li a:hover {
     cursor: pointer;
     width: 50px;
     transition: 0.5s;
-
 }
 
 #flechaDer {
@@ -286,7 +264,6 @@ nav li a:hover {
     right: 0;
     top: 50%;
     z-index: 10;
-    font-size: 20px;
     border: none;
     background: transparent;
     color: white;
@@ -296,7 +273,6 @@ nav li a:hover {
     cursor: pointer;
     width: 50px;
     transition: 0.5s;
-
 }
 
 #flechaIzq:hover {
@@ -311,7 +287,6 @@ nav li a:hover {
     opacity: 1;
 }
 
-
 .contCircle {
     display: flex;
     gap: 20%;
@@ -319,7 +294,6 @@ nav li a:hover {
     top: 90%;
     left: 50%;
     z-index: 10;
-
 }
 
 .circle {
@@ -328,7 +302,6 @@ nav li a:hover {
     opacity: 0.5;
     width: 30%;
     height: 30%;
-
 }
 
 .imagenes {
@@ -364,7 +337,6 @@ nav li a:hover {
     color: #555;
 }
 
-
 .publicidad h1 {
     color: white;
     font-size: 50px;
@@ -375,7 +347,6 @@ nav li a:hover {
     color: white;
     font-weight: 200;
     align-self: flex-start;
-
 }
 
 .publicidad button {
@@ -385,9 +356,8 @@ nav li a:hover {
     width: 150px;
     padding: 10px;
     border-radius: 10px;
-    align-self: center;
-    font-weight: bold;
     align-self: flex-start;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -395,32 +365,27 @@ nav li a:hover {
 .publicidad button:hover {
     cursor: pointer;
     background-color: #df630b;
-
 }
 
 .texto2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
     align-items: flex-start;
+    gap: 20px;
     padding: 40px;
     border-radius: 10px;
-
 }
 
 .texto2 h5 {
     color: white;
     font-size: 50px;
     line-height: 1;
-
 }
 
 .texto2 p {
     color: white;
     font-weight: 200;
-
 }
 
 .texto2 button {
@@ -432,10 +397,7 @@ nav li a:hover {
     border-radius: 10px;
     font-weight: bold;
     transition: 0.5s;
-
 }
-
-
 
 span {
     color: #f0ad31;
@@ -451,14 +413,13 @@ span {
 
 .allProducts h2 {
     color: #0E2C5E;
-
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-
 
 .productos {
     display: flex;
@@ -480,12 +441,10 @@ span {
 
 .productos h4 {
     color: #0E2C5E;
-
 }
 
 .productos h6 {
     color: grey;
-
 }
 
 .productos p {
@@ -508,7 +467,6 @@ span {
 
 .productos button:hover {
     background-color: #df630b;
-
 }
 
 .ofertas {
@@ -531,7 +489,6 @@ span {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     height: 100px;
 }
 
@@ -546,7 +503,6 @@ span {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
     transition: 0.5s;
-
 }
 
 .catDiv h6 {
@@ -557,7 +513,6 @@ span {
     box-shadow: 0 4px 12px #0568e9;
     cursor: pointer;
     transform: translateY(-5px);
-
 }
 
 .categoria img {
@@ -577,7 +532,7 @@ span {
     max-width: 600px;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgb(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.08);
 }
 
 .contenedor-contacto h2 {
@@ -637,45 +592,202 @@ form {
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
-
 }
 
 .btn-enviar:hover {
     background-color: #d99926;
 }
+
 .mensaje-error {
     color: #d9534f;
     font-size: 13px;
     margin-top: 4px;
     font-weight: 500;
 }
+
 .campo-invalido {
     border-color: #d9534f !important;
 }
+
 .resumen-oculto {
     display: none;
 }
+
 .card-resumen-exito {
     margin-top: 25px;
     padding: 20px;
     border-radius: 8px;
     background-color: #eaf7ed;
     border: 1px solid #a3e2b2;
-    color: #1e4620 ;
-    display: flex ;
-    flex-direction: column ;
-    gap: 8px ;
-    width: 100% ;
+    color: #1e4620;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
 
-}
 .card-resumen-exito h3 {
-    color: #1b5e20 ;
-    font-size: 18px ;
-    border-bottom: none ;
-    padding-bottom: 0px ;
+    color: #1b5e20;
+    font-size: 18px;
+    border-bottom: none;
+    padding-bottom: 0;
 }
-.card-resumen-exito p, .card-resumen-exito li{
-    color: #1e4620 ;
-    font-size: 14px ;
-    margin: 0 ;
+
+.card-resumen-exito p,
+.card-resumen-exito li {
+    color: #1e4620;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 8px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .contenedor {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 8px;
+        padding: 0;
+        font-size: 11px;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    nav li a {
+        padding: 0 3px;
+    }
+
+    .iconos {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .carrucel {
+        height: 150px;
+    }
+
+    .publicidad {
+        transform: scale(0.5);
+        transform-origin: left top;
+    }
+
+    .publicidad p {
+        display: none;
+    }
+
+    .publicidad button {
+        display: none;
+    }
+
+    #flechaIzq {
+        display: none;
+    }
+
+    #flechaDer {
+        display: none;
+    }
+
+    .categoria {
+        justify-content: center;
+        gap: 30px;
+        transform: scale(0.5);
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .allProducts {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .allProducts h2 {
+        align-self: flex-start;
+        font-size: 20px;
+    }
+
+    .allProducts .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .allProducts .productos {
+        width: calc(50% - 30px);
+        padding: 12px;
+    }
+
+    .productos button {
+        width: 100px;
+        height: 50px;
+    }
+
+    .ofertas {
+        margin: 5%;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .nexo img {
+        display: none;
+    }
+
+    .contenedor2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 25px 15px;
+        padding: 10px;
+    }
+
+    .contFooter {
+        padding-top: 0;
+        gap: 5px;
+    }
+
+    footer h3 {
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+
+    footer li {
+        font-size: 11px;
+        padding: 5px 0;
+    }
 }
